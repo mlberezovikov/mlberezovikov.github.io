@@ -1,0 +1,128 @@
+body {
+    background-color: #04132a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.greetings1 h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #53dcbf;
+    font-style: initial;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.js {
+    color: #53dcbf;
+}
+
+.post1 {
+    width: 400px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: calc(20%);
+}
+
+.post1 h1 {
+    color: #cdd8f6;
+    font-size: 35px;
+    line-height: 26px;
+}
+
+.post1 h2 {
+    color: #8994b0;
+    font-size: 35px;
+    line-height: 26px;
+    width: 600px;
+}
+
+.post1 p {
+    color: #78829e;
+    font-size: 14px;
+    line-height: 22px;
+    width: 350px;
+}
+
+.btn {
+    text-decoration: none;
+    color: #53dcbf;
+    background-image: linear-gradient(90deg, #53dcbf, #cdd8f6);
+    display: inline-block;
+    padding: 14px 30px;
+    border: 1px solid;
+    position: relative;
+    z-index: 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 0 15px 15px 0;
+    outline: none;
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation;
+}
+
+.btn:before {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background: linear-gradient(90deg, #53dcbf, #cdd8f6);
+    z-index: -2;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+
+.btn:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #04132a, #04132a);
+    z-index: -1;
+    transition: 0.4s;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    color: #cdd8f6;
+    transition: 0.3s;
+}
+
+.btn:hover:after {
+    background: linear-gradient(90deg, #53dcbf, #04132a);
+}
+
+.btn:active:after {
+    background: linear-gradient(90deg, #53dcbf, #04132a);
+}
+
+.btn:focus-visible {
+    box-shadow: 0 0 0 3px #53dcbf;
+}
+
+.btn:disabled {
+    pointer-events: none;
+}
+
+.btn:disabled:before {
+    filter: grayscale(100%);
+}
+
+.copyright {
+    color: #53dcbf;
+    font-size: 14px;
+}
